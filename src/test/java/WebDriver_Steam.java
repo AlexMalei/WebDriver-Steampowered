@@ -1,18 +1,18 @@
-import org.openqa.selenium.WebDriver;
+import framework.Browser;
+import framework.BrowserFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.ActionsPage;
-import pages.MainPage;
-import testUtil.DriverSingleton;
+import project.pages.ActionsPage;
+import project.pages.MainPage;
 import testUtil.TestUtil;
 
 public class WebDriver_Steam {
-    private static WebDriver driver = DriverSingleton.getInstance();
+    private static Browser browser = BrowserFactory.getInstance();
 
     @BeforeClass
     public static void setUp(){
-        driver.get(TestUtil.getWebSite());
+        browser.navigate(TestUtil.getWebSite());
     }
 
     @Test
@@ -26,6 +26,6 @@ public class WebDriver_Steam {
 
     @AfterClass
     public void tearDown(){
-        driver.quit();
+        browser.exit();
     }
 }

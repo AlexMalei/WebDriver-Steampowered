@@ -1,0 +1,4 @@
+2016-10-19 17:12:42 INFO  LoggerFactory:37 - 123
+2016-10-19 17:12:43 ERROR LoggerFactory:38 - ERROR
+2016-10-19 17:12:43 INFO  LoggerFactory:39 - info
+2016-10-19 17:12:43 WARN  LoggerFactory:40 - Warn
