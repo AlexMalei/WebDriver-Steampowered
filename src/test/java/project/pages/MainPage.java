@@ -1,13 +1,8 @@
 package project.pages;
 
-import framework.elements.DropDownElement;
+import framework.elements.Menu;
+import framework.elements.Button;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import testUtil.TestUtil;
 
 /**
  * Created by a.maley on 17.10.2016.
@@ -25,24 +20,10 @@ public class MainPage extends BasePage {
 
 
     public void chooseActionsPage() {
-        DropDownElement dropDownElement = new DropDownElement(dropdownGenreGamesLocator);
-        dropDownElement.moveMouseOnIt();
-
-        Actions mouse = new Actions(driver);
-
-        mouse.moveToElement(gamesGenreElement).build().perform();
-
-        WebDriverWait wait = new WebDriverWait(driver, TestUtil.getElementTimeout());
-        WebElement actionsRef = wait.until(new ExpectedCondition<WebElement>() {
-            public WebElement apply(WebDriver webDriver) {
-                return driver.findElement(actionGamesLocator);
-            }
-        });
-
-        mouse.click(actionsRef).build().perform();
-
-
-
+        Menu menuGames = new Menu(dropdownGenreGamesLocator);
+        menuGames.moveMouseOnIt();
+        Button btnActionGames = new Button(actionGamesLocator);
+        btnActionGames.click();
 
     }
 }

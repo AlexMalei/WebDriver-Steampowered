@@ -1,6 +1,5 @@
 package framework.elements;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import framework.BaseEntity;
 import framework.Browser;
 import framework.BrowserFactory;
@@ -30,37 +29,35 @@ public class BaseElement extends BaseEntity {
 
     private boolean isPresent() {
         WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestUtil.getElementTimeout());
-        wait.until(new ExpectedCondition<Boolean>() {
-            public Boolean apply(WebDriver webDriver) {
-                try {
+        try {
+            boolean isPresentResult = wait.until(new ExpectedCondition<Boolean>() {
+                public Boolean apply(WebDriver webDriver) {
                     List<WebElement> elements = browser.getDriver().findElements(locator);
-                    for (WebElement element : elements){
-                        if (element.isDisplayed()){
+                    for (WebElement elem : elements) {
+                        if (elem.isDisplayed()) {
+                            element = elem;
                             return true;
                         }
                     }
                     return false;
                 }
-                catch (Exception e){
-                    //here will be some operations with logger
-                }
-            }
-        });
-
+            });
+            return isPresentResult;
+        }
+        catch (Exception e){
+            return false;
+        }
     }
 
     protected void waitElement(){
-        WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestUtil.getElementTimeout());
-        wait.until(new ExpectedCondition<Boolean>() {
-            public Boolean apply(WebDriver webDriver) {
-                List<WebElement> elements = browser.getDriver().findElements(locator);
-                for (WebElement elem : elements){
-                    if (elem.isEnabled() && elem.isDisplayed()){
-                        return true;
-                    }
+        if (isPresent()){
+            WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestUtil.getElementTimeout());
+            wait.until(new ExpectedCondition<Boolean>() {
+                public Boolean apply(WebDriver webDriver) {
+                    return element.isEnabled() && element.isDisplayed();
                 }
-                return false;
-            }
-        });
+            });
+        }
     }
+
 }

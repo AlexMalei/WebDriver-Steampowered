@@ -20,8 +20,7 @@ public class WebDriver_Steam {
         MainPage main = new MainPage();
         main.chooseActionsPage();
         ActionsPage actionsPage = new ActionsPage();
-        actionsPage.chooseSpecialsCategory();
-        actionsPage.getMaxDiscountGame();
+        actionsPage.chooseMaxDiscountGame();
     }
 
     @AfterClass

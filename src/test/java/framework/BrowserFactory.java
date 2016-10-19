@@ -12,12 +12,14 @@ public class BrowserFactory extends BaseEntity{
 
     public static synchronized Browser getInstance(){
         if (browser == null){
-            BrowserType browserType = valueOf(TestUtil.getBrowserName().toLowerCase());
+            BrowserType browserType = valueOf(TestUtil.getBrowserName().toUpperCase());
             switch (browserType) {
                 case CHROME :
+                    System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
                     browser = new Browser(new ChromeDriver());
                     break;
                 case FIREFOX :
+                    System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\geckodriver.exe");
                     browser = new Browser(new FirefoxDriver());
                     break;
                 default:

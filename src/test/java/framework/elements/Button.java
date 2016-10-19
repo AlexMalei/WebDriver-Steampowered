@@ -5,14 +5,15 @@ import org.openqa.selenium.By;
 /**
  * Created by a.maley on 19.10.2016.
  */
-public class DropDownElement extends BaseElement {
-    public DropDownElement(By locator) {
+public class Button extends BaseElement {
+
+    public Button(By locator){
         super(locator);
     }
 
 
-    public void moveMouseOnIt() {
+    public void click() {
         waitElement();
-
+        element.click();
     }
 }
