@@ -6,31 +6,32 @@ import org.apache.log4j.Logger;
  * Created by a.maley on 19.10.2016.
  */
 public abstract class BaseEntity {
-    private Logger logger = Logger.getLogger(BaseEntity.class.getName());
+    private static Logger logger = Logger.getLogger(BaseEntity.class);
 
-    public void debug(String message){
+    public static void debug(String message){
         logger.debug(message);
     }
 
-    public void info(String message){
+    public static void info(String message){
         logger.info(message);
     }
 
-    public void error(String message){
+    public static void error(String message){
         logger.error(message);
     }
 
-    public void warn(String message){
+    public static void warn(String message){
         logger.warn(message);
     }
 
-    public void fatal(String message){
+    public static void fatal(String message){
         logger.fatal(message);
     }
 
-    public void trace(String message){
+    public static void trace(String message){
         logger.trace(message);
     }
+
 
 
 }

@@ -12,11 +12,16 @@ public class Menu extends BaseElement {
     }
 
 
-    public void moveMouseOnIt() {
+    private void moveMouseOnIt() {
         waitElement();
         Actions mouse = new Actions(browser.getDriver());
         mouse.moveToElement(element).build().perform();
     }
 
 
+    public void selectItem(String gameType) {
+        moveMouseOnIt();
+        Button btnActions = new Button(gameType);
+        btnActions.click();
+    }
 }

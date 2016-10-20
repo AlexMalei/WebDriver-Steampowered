@@ -20,9 +20,14 @@ public class BaseElement extends BaseEntity {
     protected Browser browser = BrowserFactory.getInstance();
     protected WebElement element;
     protected By locator;
+    protected String name;
 
     public BaseElement(By locator) {
         this.locator = locator;
+    }
+
+    public BaseElement(String name) {
+        this.name = name;
     }
 
 
