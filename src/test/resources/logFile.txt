@@ -1,203 +1,70 @@
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -50%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -50%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -25%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -33%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -25%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -20%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -33%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -20%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -33%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - -33%
-2016-10-20 20:54:51 INFO  BaseEntity:16 - Recursive click() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:55:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:55:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:56:11 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:56:11 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:24 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:24 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:24 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:24 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:24 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:24 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:24 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:24 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:24 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:24 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:24 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:24 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:24 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:24 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:25 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:25 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:25 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:25 INFO  BaseEntity:16 - -50%
-2016-10-20 20:57:25 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:57:25 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:22 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:22 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:23 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:23 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:23 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:23 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:23 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:23 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:23 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:23 INFO  BaseEntity:16 - -50%
-2016-10-20 20:58:23 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 20:58:23 INFO  BaseEntity:16 - -50%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -50%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -50%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -25%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -33%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -25%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -20%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -33%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -20%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -33%
-2016-10-20 21:05:35 INFO  BaseEntity:16 - -33%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -50%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -50%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -25%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -33%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -25%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -20%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -33%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -20%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -33%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - -33%
-2016-10-20 21:06:15 INFO  BaseEntity:16 - Recursive click() game method
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -50%
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -50%
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -25%
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -33%
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -25%
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -20%
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -33%
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -20%
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -33%
-2016-10-20 21:07:45 INFO  BaseEntity:16 - -33%
-2016-10-20 21:07:46 INFO  BaseEntity:16 - Recursive click() game method
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -50%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -50%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -25%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -33%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -25%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -20%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -33%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -20%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -33%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - -33%
-2016-10-20 21:08:49 INFO  BaseEntity:16 - Recursive click() game method
-2016-10-20 21:09:15 INFO  BaseEntity:16 - -50%
-2016-10-20 21:09:15 INFO  BaseEntity:16 - -50%
-2016-10-20 21:09:15 INFO  BaseEntity:16 - -25%
-2016-10-20 21:09:15 INFO  BaseEntity:16 - -33%
-2016-10-20 21:09:16 INFO  BaseEntity:16 - -25%
-2016-10-20 21:09:16 INFO  BaseEntity:16 - -20%
-2016-10-20 21:09:16 INFO  BaseEntity:16 - -33%
-2016-10-20 21:09:16 INFO  BaseEntity:16 - -20%
-2016-10-20 21:09:16 INFO  BaseEntity:16 - -33%
-2016-10-20 21:09:16 INFO  BaseEntity:16 - -33%
-2016-10-20 21:09:16 INFO  BaseEntity:16 - Recursive click() game method
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -50%
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -50%
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -25%
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -33%
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -25%
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -20%
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -33%
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -20%
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -33%
-2016-10-20 21:11:25 INFO  BaseEntity:16 - -33%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -50%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -50%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -25%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -33%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -50%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -50%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -50%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -50%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -50%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:12:41 INFO  BaseEntity:16 - -50%
-2016-10-20 21:12:41 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:05 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:05 INFO  BaseEntity:16 - -50%
-2016-10-20 21:13:05 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:05 INFO  BaseEntity:16 - -50%
-2016-10-20 21:13:05 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:05 INFO  BaseEntity:16 - -50%
-2016-10-20 21:13:05 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:05 INFO  BaseEntity:16 - -50%
-2016-10-20 21:13:05 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:05 INFO  BaseEntity:16 - -50%
-2016-10-20 21:13:05 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:05 INFO  BaseEntity:16 - -50%
-2016-10-20 21:13:05 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:06 INFO  BaseEntity:16 - -50%
-2016-10-20 21:13:06 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:06 INFO  BaseEntity:16 - -50%
-2016-10-20 21:13:06 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:06 INFO  BaseEntity:16 - -50%
-2016-10-20 21:13:06 INFO  BaseEntity:16 - Recursive getElementText() game method
-2016-10-20 21:13:06 INFO  BaseEntity:16 - -50%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -50%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -50%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -25%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -33%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -25%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -20%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -33%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -20%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -33%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - -33%
-2016-10-20 21:17:42 INFO  BaseEntity:16 - Recursive click() game method
+2016-10-21 19:38:48 INFO  BaseEntity:16 - -20%
+$24.99
+$19.99
+The Witcher 3: Wild Hunt - Game of the Year Edition
+2016-10-21 19:38:48 INFO  BaseEntity:16 - -20%
+$24.99
+$19.99
+The Witcher 3: Wild Hunt - Game of the Year Edition
+2016-10-21 19:38:48 INFO  BaseEntity:16 - 
+2016-10-21 19:38:48 INFO  BaseEntity:16 - 
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -20%
+$24.99
+$19.99
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -20%
+$24.99
+$19.99
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -50%
+$59.99
+$29.99
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -50%
+$59.99
+$29.99
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -33%
+$19.99
+$13.39
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -33%
+$19.99
+$13.39
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -50%
+$59.99
+$29.99
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -50%
+$59.99
+$29.99
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -33%
+$49.99
+$33.49
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -33%
+$49.99
+$33.49
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -50%
+$14.99
+$7.49
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -50%
+$14.99
+$7.49
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -25%
+$14.00
+$10.50
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -25%
+$14.00
+$10.50
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -85%
+$12.59
+$1.88
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -85%
+$12.59
+$1.88
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -15%
+$13.99
+$11.89
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -15%
+$13.99
+$11.89
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -33%
+$24.99
+$16.74
+2016-10-21 19:42:06 INFO  BaseEntity:16 - -33%
+$24.99
+$16.74

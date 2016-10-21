@@ -9,8 +9,9 @@ import java.util.regex.Pattern;
 public class RegexUtil {
     public static String getMatch(Pattern pattern, String text){
         Matcher matcher = pattern.matcher(text);
-
-        //if ()
+        if (matcher.find()){
+            return matcher.group(1);
+        }
 
         return "";
     }

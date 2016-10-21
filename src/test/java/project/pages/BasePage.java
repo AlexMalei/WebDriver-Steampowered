@@ -4,7 +4,7 @@ import framework.Browser;
 import framework.BrowserFactory;
 
 
-public class BasePage {
+public abstract class BasePage {
     protected final Browser browser;
 
     public BasePage(){
