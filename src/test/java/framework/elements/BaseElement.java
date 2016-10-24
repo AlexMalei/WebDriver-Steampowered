@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import testUtil.TestUtil;
+import testUtil.TestDataProvider;
 
 import java.util.List;
 
@@ -20,49 +20,42 @@ public class BaseElement extends BaseEntity {
     protected Browser browser = BrowserFactory.getInstance();
     protected WebElement element;
     protected By locator;
-    protected String name;
+
 
     public BaseElement(By locator) {
         this.locator = locator;
     }
 
-    public BaseElement(String name) {
-        this.name = name;
-    }
 
 
+    public void waitElement() {
+        WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestDataProvider.getElementTimeout());
 
-    private boolean isPresent() {
-        WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestUtil.getElementTimeout());
-        try {
-            boolean isPresentResult = wait.until(new ExpectedCondition<Boolean>() {
-                public Boolean apply(WebDriver webDriver) {
-                    List<WebElement> elements = browser.getDriver().findElements(locator);
-                    for (WebElement elem : elements) {
-                        if (elem.isDisplayed()) {
-                            element = elem;
-                            return true;
-                        }
+        boolean isPresent = wait.until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver webDriver) {
+                List<WebElement> elements = browser.getDriver().findElements(locator);
+                for (WebElement elem : elements) {
+                    if (elem.isDisplayed() && elem.isEnabled()) {
+                        element = elem;
+                        return true;
                     }
-                    return false;
                 }
-            });
-            return isPresentResult;
-        }
-        catch (Exception e){
-            return false;
-        }
+                return false;
+            }
+        });
+
+
     }
 
-    protected void waitElement(){
+   /* protected void waitElement(){
         if (isPresent()){
-            WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestUtil.getElementTimeout());
+            WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestDataProvider.getElementTimeout());
             wait.until(new ExpectedCondition<Boolean>() {
                 public Boolean apply(WebDriver webDriver) {
                     return element.isEnabled() && element.isDisplayed();
                 }
             });
         }
-    }
+    }*/
 
 }

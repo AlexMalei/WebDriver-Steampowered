@@ -2,7 +2,7 @@ package framework;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import testUtil.TestUtil;
+import testUtil.TestDataProvider;
 
 import static framework.BrowserType.*;
 
@@ -12,7 +12,7 @@ public class BrowserFactory extends BaseEntity{
 
     public static synchronized Browser getInstance(){
         if (browser == null){
-            BrowserType browserType = valueOf(TestUtil.getBrowserName().toUpperCase());
+            BrowserType browserType = valueOf(TestDataProvider.getBrowserName().toUpperCase());
             switch (browserType) {
                 case CHROME :
                     System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");

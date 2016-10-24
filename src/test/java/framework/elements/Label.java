@@ -3,24 +3,21 @@ package framework.elements;
 import org.openqa.selenium.By;
 
 /**
- * Created by a.maley on 19.10.2016.
+ * Created by a.maley on 24.10.2016.
  */
-public class Button extends BaseElement {
-
-
-    public Button(By locator){
+public class Label extends BaseElement {
+    public Label(By locator) {
         super(locator);
     }
 
-
-    public void click() {
+    public String getText(){
         for (;;){
             try{
                 waitElement();
-                element.click();
+                return element.getText();
             }
             catch (Exception e){
-                info("Error :", e);
+                info(e);
             }
         }
     }

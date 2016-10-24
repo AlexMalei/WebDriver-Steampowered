@@ -7,14 +7,14 @@ import org.testng.annotations.Test;
 import project.pages.ActionsPage;
 import project.pages.ConfirmAgePage;
 import project.pages.MainPage;
-import testUtil.TestUtil;
+import testUtil.TestDataProvider;
 
 public class WebDriver_Steam extends BaseEntity {
     private static Browser browser = BrowserFactory.getInstance();
 
     @BeforeClass
     public static void setUp(){
-        browser.navigate(TestUtil.getWebSite());
+        browser.navigate(TestDataProvider.getWebSite());
     }
 
     @Test

@@ -1,7 +1,7 @@
 package testUtil;
 
-public class TestUtil {
-    private final static String fileConfigPath = "src\\test\\resources\\config.properties";
+public class TestDataProvider {
+    private final static String fileConfigPath = "src\\test\\resources\\config.json";
     private static JSONReader jsonReader;
 
     private static String browserName;
