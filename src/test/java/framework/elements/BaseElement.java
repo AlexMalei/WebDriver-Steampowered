@@ -8,13 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import testUtil.TestDataProvider;
+import framework.utils.TestDataProvider;
 
 import java.util.List;
 
-/**
- * Created by a.maley on 17.10.2016.
- */
+
 public class BaseElement extends BaseEntity {
 
     protected Browser browser = BrowserFactory.getInstance();
@@ -47,15 +45,30 @@ public class BaseElement extends BaseEntity {
 
     }
 
-   /* protected void waitElement(){
-        if (isPresent()){
-            WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestDataProvider.getElementTimeout());
-            wait.until(new ExpectedCondition<Boolean>() {
-                public Boolean apply(WebDriver webDriver) {
-                    return element.isEnabled() && element.isDisplayed();
-                }
-            });
+    public void click() {
+        for (;;){
+            try{
+                waitElement();
+                element.click();
+                break;
+            }
+            catch (Exception e){
+                warn("Exception: " + e.getMessage());
+            }
         }
-    }*/
+    }
+
+    public String getText(){
+        for (;;){
+            try{
+                waitElement();
+                return element.getText();
+            }
+            catch (Exception e){
+                warn("Exception:" + e.getMessage());
+            }
+
+        }
+    }
 
 }

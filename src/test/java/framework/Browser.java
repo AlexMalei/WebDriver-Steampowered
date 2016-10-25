@@ -2,9 +2,7 @@ package framework;
 
 import org.openqa.selenium.WebDriver;
 
-/**
- * Created by a.maley on 19.10.2016.
- */
+
 public class Browser extends BaseEntity {
     private WebDriver driver;
 

@@ -1,4 +1,4 @@
-package testUtil;
+package framework.utils;
 
 import org.json.JSONObject;
 import java.io.File;
@@ -33,15 +33,15 @@ public class JSONReader {
     }
 
     public String getBrowserName(){
-        return (String) jsonObject.get("Browser");
+        return (String) jsonObject.get("browser");
     }
 
-    ////////////////!!!!!!!!!
-    public Integer getPagetTimeout(){
+
+    public Integer getPageTimeout(){
         return Integer.parseInt((String) jsonObject.get("pageTimeout"));
     }
 
-    ////////////////!!!!!!!!!
+
     public Integer getElementTimeout() {
         return Integer.parseInt((String) jsonObject.get("elementTimeout"));
     }

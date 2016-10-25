@@ -1,13 +1,13 @@
 package project.pages;
 
+import framework.elements.BaseTable;
 import framework.elements.Button;
-import framework.elements.GameDiscount;
-import framework.elements.GameTable;
+import framework.elements.Label;
 import org.openqa.selenium.By;
+import project.utils.GameInfo;
+import project.utils.RegexUtil;
 
-/**
- * Created by a.maley on 18.10.2016.
- */
+
 public class ActionsPage extends BasePage {
     private String specialsElementLocatorStr = "//div[@id='tab_select_Discounts']/div[@class='tab_content']";
     private By specialsElementLocator = By.xpath(specialsElementLocatorStr);
@@ -15,70 +15,25 @@ public class ActionsPage extends BasePage {
     private String gameTableLocatorStr = "//*[@id='DiscountsRows']";
     private By gameTableLocator = By.xpath(gameTableLocatorStr);
 
-    private String gameLocatorStr = "//*[@id='DiscountsRows']//*[contains(@class, 'tab_item')]//*[contains(text(), '%s')]";
+    private String gameLocatorStr = "//*[@id='DiscountsRows']//*[contains(text(), '%s')]//..//..";
+
+    private String patternPrice = "\\$([\\d]*.[\\d]*)?";
+    private String patternDiscount = "(-\\d*%)";
 
 
-    public void chooseMaxDiscountGame() {
+
+
+    public GameInfo chooseMaxDiscountGame() {
         Button specialsButton = new Button(specialsElementLocator);
         specialsButton.click();
+        BaseTable baseTable = new BaseTable(gameTableLocator);
+        String maxDiscount = RegexUtil.getSortedMatch(patternDiscount, baseTable.getText());
+        Label game = new Label(By.xpath(String.format(gameLocatorStr, maxDiscount)));
+        GameInfo gameInfo = new GameInfo(maxDiscount, RegexUtil.getMatch(patternPrice, game.getText()));
+        game.click();
 
-        GameTable gameTable = new GameTable(gameTableLocator);
-        String discountString = gameTable.getMaxDiscountString();
-
-        GameDiscount maxDiscountElement = new GameDiscount(By.xpath(String.format(gameLocatorStr, discountString)));
-        maxDiscountElement.click();
-        //Game maxDiscountGame = getMaxDiscountGame();  //   !!
-        //maxDiscountGame.click();
+        return gameInfo;
     }
 
-   /* private Game getMaxDiscountGame(){
 
-
-       /* List<Game> allGames = getGamesList();
-        //return list of Game(locator & webelement)
-        ArrayList<String> discountValues = getAllDiscountValues(allGames);
-        String maxDiscount = getMaxDiscountString(discountValues);
-        Game maxDiscountGame = findGame(allGames, maxDiscount);
-        return maxDiscountGame;
-    }*/
-
-   /* private List<Game> getGamesList(){
-        List<WebElement> listElements =  browser.getDriver().findElements(gamesSpecialsLocator);
-
-        List<Game> games = new ArrayList<Game>();
-        for (WebElement elem : listElements){
-            games.add(new Game(gamesSpecialsLocator, elem));
-        }
-        return games;*/
-
-    //}
-
-   /* private ArrayList<String> getAllDiscountValues(List<Game> allGames) {
-        ArrayList<String> discountValues = new ArrayList<String>();
-        for (Game game : allGames){
-            discountValues.add(game.getDiscount());
-            // обновляет элемент и находит первый ,
-            // а не соответствующий по списку.(создать локатор с contains и текстом внутри данного локатора)
-        }
-        return discountValues;
-    }
-
-    private String getMaxDiscountString(ArrayList<String> discountValues) {
-        discountValues.sort(new Comparator<String>() {
-            public int compare(String o1, String o2) {
-                return o2.compareTo(o1);
-            }
-        });
-        return discountValues.get(0);
-    }
-
-    private Game findGame(List<Game> allGames, String discount) {
-        for (Game game : allGames){
-            if (game.isThatDiscount(discount)){
-                return game;
-            }
-        }
-        return null;
-    }
-*/
 }

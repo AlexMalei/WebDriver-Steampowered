@@ -1,6 +1,7 @@
 {
 "URL" : "http://store.steampowered.com/",
-"Browser" : "chrome",
+"browser" : "firefox",
 "pageTimeout" : "60",
-"elementTimeout" : "30"
+"elementTimeout" : "30",
+"locale" : "EN"
 }

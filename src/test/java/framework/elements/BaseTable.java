@@ -3,12 +3,14 @@ package framework.elements;
 import org.openqa.selenium.By;
 
 
-public class Label extends BaseElement {
+public class BaseTable extends BaseElement {
 
 
-    public Label(By locator) {
+    public BaseTable(By locator) {
         super(locator);
     }
+
+
 
 
 }

@@ -1,29 +1,36 @@
 package project.pages;
 
-import framework.elements.GameDiscount;
+import framework.elements.Button;
 import framework.elements.Label;
 import org.openqa.selenium.By;
+import project.utils.GameInfo;
+import project.utils.RegexUtil;
 
-/**
- * Created by a.maley on 24.10.2016.
- */
+
 public class GamePage extends BasePage {
 
-    private String labelNameLocatorStr = "//*[contains(@class,'page_content')]//*[@class='apphub_AppName']";
+    private String labelNameLocatorStr = "//*[contains(@class,'page_content')]//*[contains(@class, 'apphub_AppName')]";
     private By labelNameLocator = By.xpath(labelNameLocatorStr);
-    private String discountLocatorStr = "//*[contains(@class, 'purchase_game')]//*[contains(text(),'%s')]" +
-            "/following-sibling::*//*[contains(@class,'discount_pct')]";
 
-    public String getGameName(){
-        Label labelName = new Label(labelNameLocator);
-        return labelName.getText();
+    private String discountLocatorStr = "//*[contains(@id, 'game_area_purchase')]//*[contains(@class, 'purchase_action')]//*[contains(@class, 'game_purchase_discount')]";
+    private By discountLocator = By.xpath(discountLocatorStr);
+
+    private String btnSteamDownloadLocatorStr = "//*[contains(@id, 'global_action_menu')]/*[contains(@class, 'installsteam_btn')]";
+    private By btnSteamDownloadLocator = By.xpath(btnSteamDownloadLocatorStr);
+
+    private String patternPrice = "\\$([\\d]*.[\\d]*)?";
+    private String patternDiscount = "(-\\d*%)";
+
+    public GameInfo getGameDiscount(){
+        //String gameName = getGameName();
+        Label gameCurrent = new Label(discountLocator);
+        String labelText = gameCurrent.getText();
+        return new GameInfo(RegexUtil.getMatch(patternDiscount, labelText), RegexUtil.getMatch(patternPrice, labelText));
+
     }
 
-    public String getGameDiscount(){
-        String gameName = getGameName();
-        GameDiscount gameDiscount = new GameDiscount(By.xpath(String.format(discountLocatorStr, gameName)));
-
-        //return gameDiscount.getText();
-        return "";
+    public void downloadSteam() {
+        Button button = new Button(btnSteamDownloadLocator);
+        button.click();
     }
 }

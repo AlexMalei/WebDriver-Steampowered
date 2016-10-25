@@ -3,12 +3,13 @@ package project.pages;
 import framework.elements.Button;
 import framework.elements.Selecter;
 import org.openqa.selenium.By;
+import framework.utils.LocaleDataProvider;
 
 /**
  * Created by a.maley on 20.10.2016.
  */
 public class ConfirmAgePage extends BasePage {
-    private String verificationString = "This data is for verification purposes only and will not be stored.";
+    private String verificationString = LocaleDataProvider.getVerificationString();
 
     private String daySelectLocatorStr = "//form[@id='agecheck_form']//*[@name='ageDay']";
     private String monthSelectLocatorStr = "//form[@id='agecheck_form']//*[@name='ageMonth']";

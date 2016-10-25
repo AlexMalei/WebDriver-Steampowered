@@ -2,9 +2,7 @@ package framework;
 
 import org.apache.log4j.Logger;
 
-/**
- * Created by a.maley on 19.10.2016.
- */
+
 public abstract class BaseEntity {
     private static Logger logger = Logger.getLogger(BaseEntity.class);
 
@@ -31,7 +29,7 @@ public abstract class BaseEntity {
     }
 
     public static void error(String message, Throwable e){
-        logger.debug(message, e);
+        logger.error(message, e);
     }
 
     public static void warn(String message){
@@ -39,7 +37,7 @@ public abstract class BaseEntity {
     }
 
     public static void warn(String message, Throwable e){
-        logger.debug(message, e);
+        logger.warn(message, e);
     }
 
     public static void fatal(String message){
@@ -47,7 +45,7 @@ public abstract class BaseEntity {
     }
 
     public static void fatal(String message, Throwable e){
-        logger.debug(message, e);
+        logger.fatal(message, e);
     }
 
     public static void trace(String message){
@@ -55,7 +53,7 @@ public abstract class BaseEntity {
     }
 
     public static void trace(String message, Throwable e){
-        logger.debug(message, e);
+        logger.trace(message, e);
     }
 
 

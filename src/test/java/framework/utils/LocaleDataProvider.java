@@ -1,4 +1,4 @@
-package testUtil;
+package framework.utils;
 
 import framework.BaseEntity;
 
@@ -28,7 +28,7 @@ public class LocaleDataProvider extends BaseEntity {
                     break;
                 }
                 default:
-                    warn("Locale isn't RUS or EN");
+                    warn("Locale isn't RUSSIAN or ENGLISH");
             }
         }
         catch (Exception e){
@@ -38,6 +38,10 @@ public class LocaleDataProvider extends BaseEntity {
 
     public static String getActionsString(){
         return (String) properties.get("mainPage.actions");
+    }
+
+    public static String getVerificationString(){
+        return (String) properties.get("confirmAgePage.verificationString");
     }
 
     public static String getLanguage(){
