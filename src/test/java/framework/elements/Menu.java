@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
  */
 public class Menu extends BaseElement {
 
-    private String typeGameLocatorStr = "//div[@class='popup_body popup_menu']//a[contains(text(),\'%s\')]";
+    private String typeGameLocatorStr = "//div[contains(@class, 'popup_menu')]//a[contains(text(),\'%s\')]";
 
     public Menu(By locator) {
         super(locator);
@@ -22,9 +22,9 @@ public class Menu extends BaseElement {
     }
 
 
-    public void selectItem(String gameType) {
+    public void selectItem(String itemString) {
         moveMouseOnIt();
-        Button btnActions = new Button(By.xpath(String.format(typeGameLocatorStr, gameType)));
+        Button btnActions = new Button(By.xpath(String.format(typeGameLocatorStr, itemString)));
         btnActions.click();
     }
 }

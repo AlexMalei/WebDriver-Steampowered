@@ -7,7 +7,7 @@ import testUtil.TestDataProvider;
 import static framework.BrowserType.*;
 
 
-public class BrowserFactory extends BaseEntity{
+public class BrowserFactory extends BaseEntity {
     private static Browser browser;
 
     public static synchronized Browser getInstance(){

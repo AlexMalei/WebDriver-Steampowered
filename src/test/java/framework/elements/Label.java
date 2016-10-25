@@ -17,7 +17,7 @@ public class Label extends BaseElement {
                 return element.getText();
             }
             catch (Exception e){
-                info(e);
+                info("Error :", e);
             }
         }
     }

@@ -31,7 +31,7 @@ public class BaseElement extends BaseEntity {
     public void waitElement() {
         WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestDataProvider.getElementTimeout());
 
-        boolean isPresent = wait.until(new ExpectedCondition<Boolean>() {
+        wait.until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver webDriver) {
                 List<WebElement> elements = browser.getDriver().findElements(locator);
                 for (WebElement elem : elements) {

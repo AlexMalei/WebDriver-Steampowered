@@ -23,6 +23,7 @@ public class GamePage extends BasePage {
         String gameName = getGameName();
         GameDiscount gameDiscount = new GameDiscount(By.xpath(String.format(discountLocatorStr, gameName)));
 
-        return gameDiscount.getText();
+        //return gameDiscount.getText();
+        return "";
     }
 }

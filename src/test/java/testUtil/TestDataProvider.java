@@ -1,7 +1,11 @@
 package testUtil;
 
-public class TestDataProvider {
-    private final static String fileConfigPath = "src\\test\\resources\\config.json";
+import framework.BaseEntity;
+
+import java.io.File;
+
+public class TestDataProvider extends BaseEntity {
+    private final static String fileConfigPath = "src" + File.separator + "test" + File.separator + "resources" + File.separator + "config.json";
     private static JSONReader jsonReader;
 
     private static String browserName;
@@ -9,15 +13,16 @@ public class TestDataProvider {
     private static int pageTimeout;
     private static int elementTimeout;
 
-    private boolean isRusLocale;
 
+    private static String languageFromFile;
 
-    static {
+    public static void setUpData(){
         jsonReader = new JSONReader(fileConfigPath);
         webSite = jsonReader.getWebSite();
         pageTimeout = jsonReader.getPagetTimeout();
         browserName = jsonReader.getBrowserName();
         elementTimeout = jsonReader.getElementTimeout();
+        languageFromFile = jsonReader.getLocale();
     }
 
     public static String getWebSite() {
@@ -36,11 +41,9 @@ public class TestDataProvider {
         return browserName;
     }
 
-    public boolean isRusLocale() {
-        return isRusLocale;
+    public static String getLanguageFromFile(){
+        return languageFromFile;
     }
 
-    public void setRusLocale(boolean rusLocale) {
-        isRusLocale = rusLocale;
-    }
+
 }

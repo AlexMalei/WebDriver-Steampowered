@@ -45,4 +45,8 @@ public class JSONReader {
     public Integer getElementTimeout() {
         return Integer.parseInt((String) jsonObject.get("elementTimeout"));
     }
+
+    public String getLocale(){
+        return (String) jsonObject.get("locale");
+    }
 }

@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import project.pages.ActionsPage;
 import project.pages.ConfirmAgePage;
 import project.pages.MainPage;
+import testUtil.LocaleDataProvider;
 import testUtil.TestDataProvider;
 
 public class WebDriver_Steam extends BaseEntity {
@@ -14,7 +15,11 @@ public class WebDriver_Steam extends BaseEntity {
 
     @BeforeClass
     public static void setUp(){
+        TestDataProvider.setUpData();
+        LocaleDataProvider.setUpData();
         browser.navigate(TestDataProvider.getWebSite());
+        MainPage mainPage = new MainPage();
+        mainPage.checkLanguage();
     }
 
     @Test
