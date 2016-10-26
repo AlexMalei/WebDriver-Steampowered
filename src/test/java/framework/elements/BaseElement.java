@@ -4,6 +4,7 @@ import framework.BaseEntity;
 import framework.Browser;
 import framework.BrowserFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -18,13 +19,21 @@ public class BaseElement extends BaseEntity {
     protected Browser browser = BrowserFactory.getInstance();
     protected WebElement element;
     protected By locator;
+    protected String name;
 
+    public BaseElement(By locator, String name) {
+        this.locator = locator;
+        this.name = name;
+    }
 
     public BaseElement(By locator) {
         this.locator = locator;
     }
 
 
+    public String getName(){
+        return name;
+    }
 
     public void waitElement() {
         WebDriverWait wait = new WebDriverWait(browser.getDriver(), TestDataProvider.getElementTimeout());
@@ -48,12 +57,13 @@ public class BaseElement extends BaseEntity {
     public void click() {
         for (;;){
             try{
+                info("Click: " + getClass().getSimpleName() + " " + getName());
                 waitElement();
                 element.click();
                 break;
             }
-            catch (Exception e){
-                warn("Exception: " + e.getMessage());
+            catch (StaleElementReferenceException e){
+                warn("StaleElementReferenceException in  " + getClass().getName() + e.getSystemInformation());
             }
         }
     }
@@ -61,11 +71,12 @@ public class BaseElement extends BaseEntity {
     public String getText(){
         for (;;){
             try{
+                info("GetText: " + getClass().getSimpleName() + " " + getName());
                 waitElement();
                 return element.getText();
             }
-            catch (Exception e){
-                warn("Exception:" + e.getMessage());
+            catch (StaleElementReferenceException e){
+                warn("StaleElementReferenceException in  " + getClass().getName() + e.getSystemInformation());
             }
 
         }

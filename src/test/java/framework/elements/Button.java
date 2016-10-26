@@ -10,7 +10,7 @@ public class Button extends BaseElement {
         super(locator);
     }
 
-
-
-
+    public Button(By locator, String name) {
+        super(locator, name);
+    }
 }

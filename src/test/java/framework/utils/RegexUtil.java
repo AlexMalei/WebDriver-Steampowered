@@ -1,4 +1,4 @@
-package project.utils;
+package framework.utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class RegexUtil {
     private static List<String> getMatchList(String patternStr, String text){
         Pattern pattern = Pattern.compile(patternStr);
         Matcher matcher = pattern.matcher(text);
-        List<String> listMatches = new ArrayList<String>();
+        List<String> listMatches = new ArrayList<>();
 
         while (matcher.find()){
             listMatches.add(matcher.group(1));
@@ -23,7 +23,7 @@ public class RegexUtil {
     }
     public static String getSortedMatch(String patternStr, String textElement){
         List<String> discounts = RegexUtil.getMatchList(patternStr,textElement);
-        StringSorterUtil.sortStringsList(discounts);
+        ListSorterUtil.sortStringsList(discounts);
         return discounts.get(0);
     }
 }

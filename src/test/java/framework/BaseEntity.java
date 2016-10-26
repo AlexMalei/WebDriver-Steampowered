@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 
 
 public abstract class BaseEntity {
-    private static Logger logger = Logger.getLogger(BaseEntity.class);
+    private static Logger logger = Logger.getLogger("BaseEntity Logger");
 
 
 

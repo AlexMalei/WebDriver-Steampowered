@@ -4,13 +4,10 @@ import framework.elements.Button;
 import framework.elements.Label;
 import org.openqa.selenium.By;
 import project.utils.GameInfo;
-import project.utils.RegexUtil;
+import framework.utils.RegexUtil;
 
 
 public class GamePage extends BasePage {
-
-    private String labelNameLocatorStr = "//*[contains(@class,'page_content')]//*[contains(@class, 'apphub_AppName')]";
-    private By labelNameLocator = By.xpath(labelNameLocatorStr);
 
     private String discountLocatorStr = "//*[contains(@id, 'game_area_purchase')]//*[contains(@class, 'purchase_action')]//*[contains(@class, 'game_purchase_discount')]";
     private By discountLocator = By.xpath(discountLocatorStr);
@@ -22,15 +19,16 @@ public class GamePage extends BasePage {
     private String patternDiscount = "(-\\d*%)";
 
     public GameInfo getGameDiscount(){
-        //String gameName = getGameName();
-        Label gameCurrent = new Label(discountLocator);
+        info("Get game discount");
+        Label gameCurrent = new Label(discountLocator, "\"Game from Game table\"");
         String labelText = gameCurrent.getText();
         return new GameInfo(RegexUtil.getMatch(patternDiscount, labelText), RegexUtil.getMatch(patternPrice, labelText));
 
     }
 
     public void downloadSteam() {
-        Button button = new Button(btnSteamDownloadLocator);
+        info("Download steam from GamePage");
+        Button button = new Button(btnSteamDownloadLocator, "\"Download steam\"");
         button.click();
     }
 }

@@ -10,7 +10,8 @@ public class InstallationPage extends BasePage {
     private By btnInstallLocator = By.xpath(btnInstallLocatorStr);
 
     public void install() {
-        Button btnInstall = new Button(btnInstallLocator);
+        info("Install steam");
+        Button btnInstall = new Button(btnInstallLocator, "\"Install steam\"");
         btnInstall.click();
     }
 }

@@ -10,7 +10,7 @@ public class BaseTable extends BaseElement {
         super(locator);
     }
 
-
-
-
+    public BaseTable(By locator, String name) {
+        super(locator, name);
+    }
 }

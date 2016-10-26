@@ -10,5 +10,7 @@ public class Label extends BaseElement {
         super(locator);
     }
 
-
+    public Label(By locator, String name) {
+        super(locator, name);
+    }
 }

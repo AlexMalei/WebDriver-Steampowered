@@ -5,7 +5,7 @@ import framework.elements.Button;
 import framework.elements.Label;
 import org.openqa.selenium.By;
 import project.utils.GameInfo;
-import project.utils.RegexUtil;
+import framework.utils.RegexUtil;
 
 
 public class ActionsPage extends BasePage {
@@ -24,11 +24,12 @@ public class ActionsPage extends BasePage {
 
 
     public GameInfo chooseMaxDiscountGame() {
-        Button specialsButton = new Button(specialsElementLocator);
+        info("Choose max discount game");
+        Button specialsButton = new Button(specialsElementLocator, "\"Specials button\"");
         specialsButton.click();
-        BaseTable baseTable = new BaseTable(gameTableLocator);
+        BaseTable baseTable = new BaseTable(gameTableLocator, "\"Game table\"");
         String maxDiscount = RegexUtil.getSortedMatch(patternDiscount, baseTable.getText());
-        Label game = new Label(By.xpath(String.format(gameLocatorStr, maxDiscount)));
+        Label game = new Label(By.xpath(String.format(gameLocatorStr, maxDiscount)), "\"Max discount game\"");
         GameInfo gameInfo = new GameInfo(maxDiscount, RegexUtil.getMatch(patternPrice, game.getText()));
         game.click();
 

@@ -17,6 +17,7 @@ public class TestDataProvider extends BaseEntity {
     private static String languageFromFile;
 
     public static void setUpData(){
+        info("Setup config");
         jsonReader = new JSONReader(fileConfigPath);
         webSite = jsonReader.getWebSite();
         pageTimeout = jsonReader.getPageTimeout();

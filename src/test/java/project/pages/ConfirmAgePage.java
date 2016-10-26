@@ -1,13 +1,11 @@
 package project.pages;
 
 import framework.elements.Button;
-import framework.elements.Selecter;
+import framework.elements.SelectElement;
 import org.openqa.selenium.By;
 import framework.utils.LocaleDataProvider;
 
-/**
- * Created by a.maley on 20.10.2016.
- */
+
 public class ConfirmAgePage extends BasePage {
     private String verificationString = LocaleDataProvider.getVerificationString();
 
@@ -27,19 +25,21 @@ public class ConfirmAgePage extends BasePage {
 
 
     public void checkPageAndDoConfirmation(){
+        info("Check confirmation");
         if (browser.getDriver().getPageSource().contains(verificationString)){
             doConfirmation();
         }
     }
 
     private void doConfirmation() {
-        Selecter daySelecter = new Selecter(daySelectLocator);
-        daySelecter.selectValue(day);
-        Selecter monthSelecter = new Selecter(monthSelectLocator);
-        monthSelecter.selectValue(month);
-        Selecter ageSelecter = new Selecter(yearSelectLocator);
-        ageSelecter.selectValue(year);
-        Button enterButton = new Button(enterBtnLocator);
+        info("Do confirmation");
+        SelectElement daySelectElement = new SelectElement(daySelectLocator, "\"Day select\"");
+        daySelectElement.selectValue(day);
+        SelectElement monthSelectElement = new SelectElement(monthSelectLocator, "\"Month select\"");
+        monthSelectElement.selectValue(month);
+        SelectElement ageSelectElement = new SelectElement(yearSelectLocator, "\"Year select\"");
+        ageSelectElement.selectValue(year);
+        Button enterButton = new Button(enterBtnLocator, "\"Confirmation age\"");
         enterButton.click();
 
 

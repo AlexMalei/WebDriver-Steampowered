@@ -4,9 +4,7 @@ import framework.BaseEntity;
 
 import java.util.Objects;
 
-/**
- * Created by a.maley on 25.10.2016.
- */
+
 public class GameInfo extends BaseEntity{
     private String discount;
     private String price;

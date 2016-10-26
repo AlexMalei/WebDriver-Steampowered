@@ -15,6 +15,7 @@ public class LocaleDataProvider extends BaseEntity {
     private static Properties properties = new Properties();
 
     public static void setUpData(){
+        info("Setup language properties");
         try {
             switch (TestDataProvider.getLanguageFromFile().toLowerCase()){
                 case ("en"): {
@@ -42,6 +43,10 @@ public class LocaleDataProvider extends BaseEntity {
 
     public static String getVerificationString(){
         return (String) properties.get("confirmAgePage.verificationString");
+    }
+
+    public static String getExpectedTitleMainPage(){
+        return (String) properties.get("mainPage.title");
     }
 
     public static String getLanguage(){

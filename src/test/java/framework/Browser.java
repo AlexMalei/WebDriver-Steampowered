@@ -15,6 +15,7 @@ public class Browser extends BaseEntity {
     }
 
     public void navigate(String url){
+        info("Navigate to website");
         driver.get(url);
     }
 

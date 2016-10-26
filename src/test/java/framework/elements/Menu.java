@@ -12,8 +12,12 @@ public class Menu extends BaseElement {
         super(locator);
     }
 
+    public Menu(By locator, String name) {
+        super(locator, name);
+    }
 
     private void moveMouseOnIt() {
+        info("Moving mouse on games menu");
         waitElement();
         Actions mouse = new Actions(browser.getDriver());
         mouse.moveToElement(element).build().perform();
@@ -22,7 +26,7 @@ public class Menu extends BaseElement {
 
     public void selectItem(String itemString) {
         moveMouseOnIt();
-        Button btnActions = new Button(By.xpath(String.format(typeGameLocatorStr, itemString)));
+        Button btnActions = new Button(By.xpath(String.format(typeGameLocatorStr, itemString)), "\"Action\"");
         btnActions.click();
     }
 }
